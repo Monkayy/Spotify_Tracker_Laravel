@@ -1,0 +1,83 @@
+:root {
+    --spotify-green: #1db954;
+    --dark-bg: #121212;
+    --card-bg: #1e1e1e;
+    --text-primary: #ffffff;
+    --text-secondary: #b3b3b3;
+    --border-color: #333333;
+}
+
+.card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+}
+
+.card-header {
+    background-color: rgba(29, 185, 84, 0.1);
+    border-bottom: 1px solid var(--border-color);
+    color: var(--spotify-green);
+    font-weight: 600;
+}
+
+.now-playing {
+    background: linear-gradient(135deg, rgba(29, 185, 84, 0.2), rgba(29, 185, 84, 0.05));
+    border: 2px solid var(--spotify-green);
+}
+
+.track-item {
+    background-color: rgba(255, 255, 255, 0.02);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.track-item:hover {
+    background-color: rgba(29, 185, 84, 0.1);
+    transform: translateY(-2px);
+}
+
+.album-cover {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.progress-bar {
+    background-color: var(--spotify-green);
+}
+
+.badge-spotify {
+    background-color: var(--spotify-green);
+    color: white;
+}
+
+.text-spotify {
+    color: var(--spotify-green);
+}
+
+.btn-spotify {
+    background-color: var(--spotify-green);
+    border-color: var(--spotify-green);
+    color: white;
+}
+
+.btn-spotify:hover {
+    background-color: #1ed760;
+    border-color: #1ed760;
+}
+
+.profile-stats {
+    background: linear-gradient(45deg, var(--card-bg), rgba(29, 185, 84, 0.05));
+}
+
+.stat-number {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--spotify-green);
+}
+
+.friend-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid var(--spotify-green);
+}

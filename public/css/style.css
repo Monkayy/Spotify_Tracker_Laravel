@@ -1,0 +1,360 @@
+:root {
+    --light-green: #1db954;
+    --secondary-color: #19f332;
+    --accent-color: #00BFFF;
+    --dark-color: #1E1E2F;
+    --light-color: #F5F5F5;
+    --card-bg: #1e1e1e;
+    --card-hover: #2a2a2a;
+}
+
+
+.text-green{
+    color: var(--light-green);
+}
+
+@media (max-width: 767px) {
+    body {
+        padding-top: 100px;
+    }
+}
+
+body.friends {
+    background: linear-gradient(135deg, var(--spotify-darker) 0%, #191414 100%);
+    min-height: 100vh;
+}
+
+/* ------------------ CARDS BOOTSTRAP CUSTOM ------------------ */ 
+.friend-activites-cards {
+    background: var(--card-bg);
+    border: 1px solid rgba(29, 185, 84, 0.2);
+    border-radius: 16px;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+}
+
+.friend-activites-cards:hover {
+    background: var(--card-hover);
+    border-color: var(--light-green);
+    transform: translateY(-4px);
+    box-shadow: 0 12px 35px rgba(29, 185, 84, 0.2);
+}
+
+
+.stats-card {
+    background: linear-gradient(135deg, var(--card-bg) 0%, #2a2a2a 100%);
+    border: 1px solid rgba(29, 185, 84, 0.3);
+    border-radius: 20px;
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.stats-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--light-green), #4ade80, #22c55e);
+}
+
+.stats-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 40px rgba(29, 185, 84, 0.3);
+}
+
+/* ------------------ AVATAR PROFILO UTENTE ------------------ */ 
+.avatar {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, var(--light-green) 0%, #4ade80 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.avatar::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    background: conic-gradient(var(--light-green), #4ade80, #22c55e, var(--light-green));
+    border-radius: 50%;
+    z-index: -1;
+    animation: rotate 3s linear infinite;
+}
+
+
+/* ------------------ NAVBAR ------------------ */ 
+.navbar {
+    background: rgba(29, 185, 84, 0.1) !important;
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(29, 185, 84, 0.2) !important;
+}
+
+
+.nav-link:hover {
+    color: var(--light-green) !important;
+}
+
+.nav-link.active {
+    background: var(--light-green) !important;
+}
+
+        
+.navbar-brand, .nav-link {
+    transition: all 0.3s ease !important;
+}
+
+.navbar-brand:hover {
+    color: var(--light-green) !important;
+    transform: scale(1.05);
+}
+
+.nav-link.active {
+    border-radius: 10px;
+}
+
+.nav-link.active:hover {
+    color: var(--dark-color) !important;
+}
+
+#navbar-brand-title {
+    color: #32CD32;
+}
+
+/* ------------------ SEARCH BAR ------------------ */ 
+.search-bar {
+    background: var(--card-bg) !important;
+    border: 2px solid rgba(29, 185, 84, 0.3) !important;
+    border-radius: 25px !important;
+    padding: 12px 20px !important;
+    color: white !important;
+    transition: all 0.3s ease;
+}
+
+.search-bar:focus {
+    border-color: var(--light-green) !important;
+    box-shadow: 0 0 20px rgba(29, 185, 84, 0.3) !important;
+    background: var(--card-hover) !important;
+}
+
+
+/* ------------------ BOTTONI ------------------ */ 
+.btn-info {
+    background: whitesmoke !important;
+}
+
+.btn-success {
+    background: var(--light-green) !important;
+}
+
+.btn-outline-danger {
+    border-radius: 50px !important;
+}
+
+.btn-light-green {
+    background: linear-gradient(135deg, var(--light-green) 0%, #22c55e 100%);
+    border: none;
+    border-radius: 50px !important;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn-light-green:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(29, 185, 84, 0.4);
+    background: linear-gradient(135deg, #22c55e 0%, var(--light-green) 50%);
+}
+
+.accordion-button{
+    color: var(--light-green) !important;
+}
+
+.dropdown-item:hover {
+    background: var(--light-green) !important;
+}
+
+.breadcrumb {
+    float: right;
+}
+
+.hero-gradient {
+    background: linear-gradient(135deg, #000000 0%, #283330 100%);
+    min-height: 100vh;
+}
+
+.floating-note {
+    animation: float 3s ease-in-out infinite;
+}
+
+.bg-spotify {
+    background-color: var(--light-green) !important;
+}
+
+.hero-section {
+    background: linear-gradient(135deg, var(--light-green) 0%, var(--secondary-color) 100%);
+    padding-top: 80px;
+}
+
+.signup-card {
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(29, 185, 84, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.music-icon {
+    background: linear-gradient(45deg, var(--light-green), #1ed760);
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 2rem;
+    animation: pulse 2s infinite;
+}
+
+.form-control:focus {
+    border-color: var(--light-green);
+    box-shadow: 0 0 0 0.2rem rgba(29, 185, 84, 0.25);
+}
+
+span.text-primary {
+    color: #1db954 !important;
+}
+
+.forgot-password {
+    color: var(--light-green);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.invalid-input {
+    color: #dc3545;
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+    display: block;
+}
+
+.forgot-password:hover {
+    color: #1aa84a;
+    text-decoration: underline;
+}
+
+/* ------------------ INDICATORI STATO AMICI ------------------ */ 
+.online-indicator {
+    position: absolute;
+    bottom: 2px;
+    right: 2px;
+    width: 16px;
+    height: 16px;
+    background: #22c55e;
+    border: 3px solid var(--card-bg);
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+}
+
+.offline-indicator {
+    position: absolute;
+    bottom: 2px;
+    right: 2px;
+    width: 16px;
+    height: 16px;
+    background: #c52222;
+    border: 3px solid var(--card-bg);
+    border-radius: 50%;
+    animation: pulse-indiocator 2s infinite;
+}
+
+.custom-tabs .nav-link {
+    background: transparent;
+    border: 2px solid rgba(29, 185, 84, 0.2);
+    border-radius: 15px 15px 0 0;
+    color: #ccc;
+    margin-right: 5px;
+    transition: all 0.3s ease;
+}
+
+.custom-tabs .nav-link.active {
+    background: linear-gradient(135deg, var(--spotify-green) 0%, #22c55e 100%);
+    border-color: var(--spotify-green);
+    color: white;
+    box-shadow: 0 -5px 15px rgba(29, 185, 84, 0.3);
+}
+
+.custom-tabs .nav-link:hover:not(.active) {
+    background: rgba(29, 185, 84, 0.1);
+    color: var(--spotify-green);
+}
+
+.loader {
+  width: 48px;
+  height: 48px;
+  display: block;
+  position: relative;
+  margin: 0 auto;
+}
+
+.loader::after,
+.loader::before {
+  content: '';  
+  box-sizing: border-box;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 2px solid #FFF;
+  position: absolute;
+  left: 0;
+  top: 0;
+  animation: animloader 2s linear infinite;
+}
+.loader::after {
+  animation-delay: 1s;
+}
+
+
+
+/* ------------------ ANIMAZIONI ------------------ */ 
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+@keyframes pulse-indicator {
+    0% { box-shadow: 0 0 0 0 rgba(34, 197, 94, 0.7); }
+    70% { box-shadow: 0 0 0 10px rgba(34, 197, 94, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(34, 197, 94, 0); }
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+}
+
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+
+@keyframes animloader {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
